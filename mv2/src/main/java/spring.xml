@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	
+
+<!-- SINGLE OBJECT id distinguishes, bean creates the object for you so that it follows the SPRING MOTTO -->   
+<bean id="v1" class="mvn2.mv2.vhk1">
+	<property name="x" value="3"></property> <!-- SETTER INJECTION -->
+</bean>
+
+<bean id="v2" class="mvn2.mv2.vhk2">
+<constructor-arg name="y" value="3"></constructor-arg>
+</bean> 
+
+</beans>
